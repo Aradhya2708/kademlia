@@ -14,7 +14,11 @@ help: ## Show this help message
 
 # Setup reports directory
 setup-reports:
-	@mkdir -p $(REPORTS_DIR)/{unit,integration,coverage,benchmark}
+	@mkdir -p $(REPORTS_DIR)/unit
+	@mkdir -p $(REPORTS_DIR)/integration
+	@mkdir -p $(REPORTS_DIR)/coverage
+	@mkdir -p $(REPORTS_DIR)/benchmark
+
 
 # Basic test commands
 test: test-unit ## Run unit tests only
